@@ -1,0 +1,34 @@
+* {
+    box-sizing: content-box;
+}
+
+.baner {
+    font-size: 4vw;
+    color: royalblue;
+}
+
+#titulo {
+    text-align: center;
+    margin-top: 10%;
+    text-decoration: solid;
+}
+
+.imagencal {
+    background-image: url(imagenescalcular/calcular2.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 35%;
+}
+
+.cuerpo {
+    margin-top: 10%;
+    margin-left: 25%;
+}
+
+.resultado {
+    margin-top: 5%;
+    margin-left: 36%;
+    color: red;
+    text-decoration: solid;
+    font-size: 3vw;
+}
