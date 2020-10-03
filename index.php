@@ -54,52 +54,68 @@
 
         
     <div class="mt-5">
-      <h3 class="resultado">
-        <?php
-      $num1= "";
-      $num2= "";
-      $ejecutar="";
+      
 
-      if(isset($_POST['resultado_1'])){
-          $num1=$_POST['numero_1'];
-          $num2=$_POST['numero_2'];
-          $ejecutar=$_POST['operaciones'];
-          
-          switch ($ejecutar) {
-              case 'sumar':
-                $suma=$num1+$num2;
-                echo " la Suma Es: $suma";
-                  # code...
+      <?php if(isset($_POST['resultado_1'])): ?>
+
+        <h3 class="resultado"><?php
+
+        $num1=$_POST['numero_1'];
+        $num2=$_POST['numero_2'];
+        $ejecutar=$_POST['operaciones'];
+
+        switch ($ejecutar) {
+
+          case 'sumar':
+            $suma=$num1+$num2;
+            echo " la Suma Es: $suma";
+            # code...
                   break;
 
                   case 'restar':
                     $rest=$num1-$num2;
                     echo "La Resta Es: $rest";
-                      # code...
+                    # code...
                       break;
+
                       case 'multiplicar':
                         $mult=$num1*$num2;
                         echo "La Multiplicacion Es: $mult";
-                          # code...
+                         # code...
+                        break;
+
+                        case 'dividir':
+                          $div=$num1/$num2;
+                          echo " La Division Es: $div";
+                           # code...
                           break;
-                          case 'dividir':
-                            $div=$num1/$num2;
-                            echo " La Division Es: $div";
-                              # code...
-                              break;
-              
-              default:
-               echo 'error intenta de nuevo';
-                  # code...
+
+                          default:
+                          echo 'error intenta de nuevo';
+                           # code...
                   break;
-          }
 
+
+
+
+        }
+
+
+
+        ?></h3>
+
+
+
+
+
+      <?php endif?>
+
+      
+      
           
-
-
-      }   # code...
-    
-    ?>  </h3>
+      
+     
+     
 
 
 
@@ -109,3 +125,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+          
+
